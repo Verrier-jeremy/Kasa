@@ -1,0 +1,32 @@
+.footer {
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    height: 209px;
+    width : 100%;
+
+    img{
+        padding-top: 66px;;
+        width:122px;
+        height:39.44px;
+    }
+    p{
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            padding-top: 20px;
+            line-height: 142.6%;
+            display: flex;
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width: 400px) {
+    p{
+        font-size: 12px;
+    }
+}

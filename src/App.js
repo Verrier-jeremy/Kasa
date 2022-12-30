@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Routes, Route} from 'react-router-dom';
+
+// import des pages du site KASA
+import Home from "./pages/Home";
+import Apartment from './pages/Apartment';
+import Error404 from "./pages/Error404";
+import About from './pages/About';
+
+// import des components Header & footer
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+
+// import du style générale de l'application
+import './styles/App.scss';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+        <Routes>   
+          <Route path="/" element={<Home/>}/>
+          <Route path='/Apartement/:id' element={<Apartment />}/>
+          <Route path="/A_Propos" element={<About/>}/>
+          <Route path="/*" element={<Error404/>}/>
+        </Routes>
+      <Footer />
     </div>
   );
 }

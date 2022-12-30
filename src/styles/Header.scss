@@ -1,0 +1,37 @@
+
+.header {
+    font-weight: 500;
+    display: flex;
+    color : #FF6060;
+    justify-content: space-between;
+    margin: 30px 100px 30px 100px;
+
+    img{
+        height : 68px;
+        width : 210.32px;
+        
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        color: #FF6060;
+        list-style-type: none;
+        justify-content: right;
+        align-items: center;
+       
+        
+        li{
+            font-size: 24px;
+            
+            .Home, .AboutLink{
+                color: #FF6060;
+                text-decoration: none;    
+            }
+            
+        :hover{
+            text-decoration: underline;
+        }
+
+        }
+    }
+}
