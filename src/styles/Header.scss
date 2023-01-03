@@ -1,14 +1,26 @@
 
 .header {
+
     font-weight: 500;
     display: flex;
     color : #FF6060;
     justify-content: space-between;
-    margin: 30px 100px 30px 100px;
+    margin: 30px 100px;
+    @media all and (max-width:900px) {
+        margin: 20px 20px;
+    }
+
 
     img{
         height : 68px;
         width : 210.32px;
+        @media all and (max-width:500px) {
+            height : 47px;
+            width : 145px;   
+        }
+        @media all and (min-width:501px) and (max-width: 900px) {
+            font-size: 24px;
+        }
         
     }
     ul{
@@ -16,21 +28,32 @@
         justify-content: space-between;
         color: #FF6060;
         list-style-type: none;
-        justify-content: right;
         align-items: center;
-       
+        width :300px;
+        @media all and (max-width:500px) {
+            width:150px;
+        }
+        @media all and (min-width:500px) and (max-width: 900px) {
+            width:220px;
+        }
         
         li{
             font-size: 24px;
+            @media all and (max-width:500px) {
+                font-size: 12px;
+            }
+            @media all and (min-width:500px) and (max-width: 900px) {
+                font-size: 18px;
+            }
             
-            .Home, .AboutLink{
+            .Acceuil, .AboutLink{
                 color: #FF6060;
                 text-decoration: none;    
             }
             
-        :hover{
-            text-decoration: underline;
-        }
+            :hover{
+                text-decoration: underline;
+            }
 
         }
     }

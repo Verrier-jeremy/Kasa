@@ -27,21 +27,22 @@ return (
         <div className='Apartment__cover'>
             <Carousel pictures={pictures}/>
         </div>
-        <div className='Apartment__title__profile'>
-            <h1 className='Apartment__title'>{title}</h1>
-            <div className='Apartment__user__profile'>
-                <span className='Apartment__user'>{host.name}</span>
-                <img className='Apartment__profile' src={host.picture} alt={host.name}/>
+        <div className='Apartment__container'>
+            <div className='Apartment__title__profile'>
+                <h1 className='Apartment__title'>{title}</h1> 
+                <p className='Apartment__location'>{location}</p> 
+                {tags.map((tag, index) => 
+                <Tags key={index} getTags={tag}/>)}  
             </div>
-        </div>
-        <p className='Apartment__location'>{location}</p>
-        <div className='Apartment__tags'>
-            {tags.map((tag, index) => 
-            <Tags key={index} getTags={tag}/>)}  
-        </div>
-        <div className='Apartment__rating'>
+        
+            <div className='Apartment__rating'>
+                <div className='user__profile'>
+                    <span className='user'>{host.name}</span>
+                    <img className='profile' src={host.picture} alt={host.name}/>
+                </div>
                 <Rate number={rating} />
             </div>
+        </div>
         <div className='Apartment__collaps'>
             <Collaps title="Description" content={description} />
             <Collaps title="Équipements" content={equipments} />

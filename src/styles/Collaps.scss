@@ -1,8 +1,9 @@
 
 .collaps{
-    
+    margin-bottom: 20px;
     .button_collaps{
         background-color: #FF6060;
+        border-style: none;
         height : 47px;
         border-radius: 5px;
         padding: 0px 27px 0 15px;
@@ -15,6 +16,10 @@
 
     .vector_collaps{
         align-items: center;
+        @media all and (max-width : 500px) {
+            width:15px;
+            height : 9px;
+        }
     }
    
     .text_collaps{       
@@ -25,6 +30,7 @@
         color: #FF6060;
         font-weight: 400;
         display : none;
+        
     }
 
     .show{

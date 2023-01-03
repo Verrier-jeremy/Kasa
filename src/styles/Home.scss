@@ -4,6 +4,13 @@
     flex-direction: column;
     padding: 0 ;
     margin : 0 100px;
+    @media all and (min-width: 500px) and (max-width: 990px) {
+        margin : 0 20px;    
+    }
+
+    @media all and  (max-width: 900px) {
+        margin : 0 20px;   
+    }
 
 
     .Home_banner{
@@ -12,62 +19,79 @@
         background-image: url('../asset/Banner/Home_banner.jpg');
         background-repeat: no-repeat;
         background-size:cover;
-        filter:brightness(80%);
+        background-position: center;
         border-radius: 20px;
         height : 223px;
         margin-bottom : 43px;
+        @media all and (min-width: 500px) and (max-width: 900px) {
+            height : 160px;   
+        }
+        @media all and (max-width: 500px) {
+            height : 111px;   
+        }
 
         
         .Text_banner{
-            filter:brightness(100%);
+           
             display: flex;
             height : 100%;
             align-items: center;
             color: #fff;
             font-size: 48px;
             font-weight: 500;
+            @media all and (min-width: 500px) and (max-width: 900px) {
+                font-size: 36px;    
+            }
+            @media all and (max-width: 500px) {
+                font-size: 24px;   
+            }
             
         }
 }
  .ApartmentList{
             padding : 50px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            column-gap: 50px;
-            row-gap: 56px;
-            padding: 50px 56 px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
             border-radius: 25px;
             margin-bottom: 40px;
             background: #F7F7F7;
-            
-            
-            
-             
-            }
+            @media  (max-width: 500px) {
+                padding : 0px;
+            }  
         }
+}
 .apartment{
         width : 340px;
         height: 340px;
         background: linear-gradient(180deg, rgba(255,96,96,1) 0%, rgba(194,80,80,1) 80%);
         border-radius: 10px;
         overflow: hidden;
+        margin-bottom: 30px;
+        @media all and (max-width: 500px) {
+            width : 100%;
+            height: 255px;   
+        }
         
         a{
             text-decoration: none;
-            
         }
         
         .apartmentTitle{
             font-size: 18px;
             color: white;
             font-weight: 500;
-            padding : 20px;
+            padding-left : 20px;
+            padding-top : 20px;
+            @media all and (max-width: 500px) {
+                padding-top : 10px;   
+            }
         }
-    
 
         .homeImg{
             width : 100%;
             height: 77%;
             object-fit: cover;
+            
         }
 }

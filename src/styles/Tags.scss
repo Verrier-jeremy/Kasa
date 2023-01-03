@@ -1,17 +1,27 @@
 .TagElement{
     border-radius: 10px;
     overflow: hidden;
-    margin:20px 5px;
+    margin: 5px 5px;
+    display: flex;
+    
    
 }
 .tag{
     background-color: #FF6060;
     color: white;
     font-size: 14px;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height:30px;
     width: 120px;
+    @media all and (min-width:500px) and (max-width:900px) {
+        font-size: 12px;
+        width: 100px; 
+    }
+    @media all and (max-width:500px) {
+        font-size: 10px;
+        width: 84px; 
+    }
 }

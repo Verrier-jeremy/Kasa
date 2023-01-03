@@ -31,7 +31,6 @@ const Carousel = ({pictures}) => {
             </div>
 
             <img className="Apartment__picture" src={pictures[currentIndex]} alt="vu de l'apartement"/>
-            <img className="Apartment__previous__picture" src={pictures[currentIndex]} alt="vu de l'apartement"/>
 
             <div className="next__arrow" onClick={Next} >
                 <img className="vector RightVector" src={BigVector} alt="Suivante" />

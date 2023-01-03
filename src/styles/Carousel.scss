@@ -1,14 +1,31 @@
 .Carousel{
 display: flex;
-position: absolute;
-left: 20px;
-right: 20px;
+
+    .previous__arrow, .next__arrow{
+        position: absolute;
+        height:100%;
+    }
+    .previous__arrow{
+        left:100px;
+        @media all and (max-width:900px) {
+            left:10px;
+        }
+    }
+    .next__arrow{
+        right:100px;
+        @media all and (max-width:900px) {
+            right:10px;
+        }
+    }
 
 }
 .Apartment__picture{
     height : 415px;
     width: 100%;
     object-fit: cover;
+    @media all and (max-width:500px) {
+        height:255px;
+    }
 }
 .Apartment__previous__picture{
     width : 15px;
@@ -20,18 +37,25 @@ right: 20px;
     width: 46.68px;
     height: 79.2px;
     padding : 30px 15px;
-    border: 2px black solid;
+    @media all and (max-width:500px) {
+        width: 11.7px;
+        height: 19.8px;
+    }
 }
 
 .RightVector{
     transform: rotate(180deg);
     position: relative;
-    right: 80px;
     top: 150px;
+    @media all and (max-width:500px) {
+        top: 90px;
+    }
 }
 
 .LeftVector{
-position: relative;
-left: 80px;
-top: 150px;
+    position: relative;
+    top: 150px;
+    @media all and (max-width:500px) {
+        top: 90px;
+    }
 }

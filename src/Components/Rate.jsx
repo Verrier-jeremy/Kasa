@@ -11,7 +11,7 @@ const Rate = ({number}) => {
           number >= star ? (
            <p key={star} className="colored-star">★</p>
           ) : (
-            <p className="empty-star">★</p>
+            <p key={star} className="empty-star">★</p>
           ))}
       </div>
     )
