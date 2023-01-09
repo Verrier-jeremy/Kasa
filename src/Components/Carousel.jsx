@@ -21,10 +21,8 @@ const Carousel = ({pictures}) => {
 
         setCurrentIndex(newIndex);
     };
-    
-    
-    return( 
-
+    { let displayCarousel = pictures.length === 1 ? <img className="Apartment__picture" src={pictures[currentIndex]} alt="vu de l'apartement"/>
+        :
         <div className="Carousel" >
             <div className="previous__arrow" onClick={Previous}>
                 <img className="vector LeftVector" src={BigVector} alt="Précédente" />
@@ -36,7 +34,11 @@ const Carousel = ({pictures}) => {
                 <img className="vector RightVector" src={BigVector} alt="Suivante" />
             </div>
         </div>
-        )
+    
+    return(
+        displayCarousel
+    )
     }
+}
 
 export default Carousel;
