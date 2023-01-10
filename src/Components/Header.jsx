@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+
+// import du logo du site et du style du Header
 import logo_header from '../asset/Header/logo_header.jpg';
 import '../styles/Header.scss';
 

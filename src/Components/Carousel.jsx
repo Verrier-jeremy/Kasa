@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
+// import de l'image BigVector et du style Carousel
 import '../styles/Carousel.scss';
 import BigVector from'../asset/Banner/BigVector.png'
 
 
 const Carousel = ({pictures}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    //const [previousIndex, setPreviousIndex] = useState(0);
     const length = pictures.length - 1;
 
     const Previous = () => {
@@ -21,7 +21,9 @@ const Carousel = ({pictures}) => {
 
         setCurrentIndex(newIndex);
     };
-    { let displayCarousel = pictures.length === 1 ? <img className="Apartment__picture" src={pictures[currentIndex]} alt="vu de l'apartement"/>
+    // condition d'affichage des flèches si présence d'une ou plusieurs photos 
+    { let displayCarousel = pictures.length === 1 ? 
+        <img className="Apartment__picture" src={pictures[currentIndex]} alt="vu de l'apartement"/>
         :
         <div className="Carousel" >
             <div className="previous__arrow" onClick={Previous}>

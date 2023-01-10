@@ -1,4 +1,6 @@
 import React from "react";
+
+// import de l'image Vector et du style Collaps
 import '../styles/Collaps.scss';
 import Vector from'../asset/Banner/Vector.png';
 

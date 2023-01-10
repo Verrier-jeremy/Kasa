@@ -1,4 +1,6 @@
 import React from 'react';
+
+//import du style des Tags
 import '../styles/Tags.scss'
 
 const Tags = ({getTags}) => {

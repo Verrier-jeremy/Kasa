@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Import de la base de donnée aboutKasa et du composant Thumb
 import aboutData from'../Data/aboutKasa';
 import Thumb from '../Components/Thumb';
 

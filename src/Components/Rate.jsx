@@ -1,4 +1,6 @@
 import React from "react";
+
+//import du style des Rating
 import '../styles/Rating.scss'
 
 const Rate = ({number}) => {

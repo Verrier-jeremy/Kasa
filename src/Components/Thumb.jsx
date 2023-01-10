@@ -1,6 +1,9 @@
 import React from "react";
-import Apartments from '../Data/Apartment.json';
 import {Link} from 'react-router-dom';
+
+// import de la base de donnée concernant les apartement
+import Apartments from '../Data/Apartment.json';
+
 
 const Thumb = () => {
     return(

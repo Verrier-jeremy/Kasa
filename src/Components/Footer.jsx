@@ -1,9 +1,12 @@
 import React from 'react';
+
+// import du logo du site et du style du Footer
 import logo_footer from '../asset/Footer/logo_footer.png'
 import '../styles/Footer.scss';
 
 const Footer = () => {
 
+    // Récuperation de l'année en cours
     const effectiveYear = new Date().getFullYear();
     
     return(
